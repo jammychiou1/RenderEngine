@@ -1,0 +1,1291 @@
+# depslib dependency file v1.0
+1505228105 source:d:\c++\projects\opengl_test\main.cpp
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<cmath>
+	<iostream>
+	<cstring>
+	<chrono>
+	<vector>
+	"Display.h"
+	"Texture.h"
+	"Vertex.h"
+	"Mesh.h"
+	"UniformMat4.h"
+	"UniformVec3.h"
+	"Transform.h"
+	"Program.h"
+	"helper/OBJLoader.h"
+	"helper/ShaderSrcLoader.h"
+
+1469329178 d:\c++\libraries\glew-2.0.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1471498348 d:\c++\libraries\glfw-3.2.1\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1469292216 source:d:\c++\projects\opengl_test\glew.c
+	<GL/glew.h>
+	<GL/osmesa.h>
+	<GL/eglew.h>
+	<GL/wglew.h>
+	<GL/glxew.h>
+	<stddef.h>
+	<dlfcn.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdlib.h>
+	<string.h>
+	<AvailabilityMacros.h>
+	<dlfcn.h>
+	<mach-o/dyld.h>
+
+1469329178 d:\c++\libraries\glew-2.0.0\include\gl\eglew.h
+	<sys/types.h>
+	<KHR/khrplatform.h>
+	<EGL/eglplatform.h>
+	<GL/glew.h>
+
+1469329178 d:\c++\libraries\glew-2.0.0\include\gl\wglew.h
+	<windows.h>
+
+1469329178 d:\c++\libraries\glew-2.0.0\include\gl\glxew.h
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/Xmd.h>
+	<GL/glew.h>
+
+1485083546 d:\c++\libraries\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1483566163 d:\c++\libraries\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1485083546 d:\c++\libraries\glm\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1485083546 d:\c++\libraries\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1485083547 d:\c++\libraries\glm\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1483566163 d:\c++\libraries\glm\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\precision.hpp
+	"setup.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1483566164 d:\c++\libraries\glm\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\_swizzle.hpp
+
+1485083546 d:\c++\libraries\glm\glm\detail\_swizzle_func.hpp
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec2.inl
+
+1483566164 d:\c++\libraries\glm\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec3.inl
+
+1483566164 d:\c++\libraries\glm\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec4_simd.inl
+
+1485083547 d:\c++\libraries\glm\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat2x2.inl
+	"func_matrix.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1485083547 d:\c++\libraries\glm\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat2x3.inl
+
+1485083547 d:\c++\libraries\glm\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat2x4.inl
+
+1485083547 d:\c++\libraries\glm\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat3x2.inl
+
+1485083547 d:\c++\libraries\glm\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat3x3.inl
+	"func_matrix.hpp"
+
+1485083547 d:\c++\libraries\glm\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat3x4.inl
+
+1485083547 d:\c++\libraries\glm\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat4x2.inl
+
+1485083547 d:\c++\libraries\glm\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat4x3.inl
+
+1485083547 d:\c++\libraries\glm\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1483566163 d:\c++\libraries\glm\glm\detail\type_mat4x4_simd.inl
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1483566163 d:\c++\libraries\glm\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\type_vec1.inl
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1483566163 d:\c++\libraries\glm\glm\detail\func_vector_relational_simd.inl
+
+1485083546 d:\c++\libraries\glm\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1483566164 d:\c++\libraries\glm\glm\simd\exponential.h
+	"platform.h"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1483566163 d:\c++\libraries\glm\glm\simd\common.h
+	"platform.h"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1483566164 d:\c++\libraries\glm\glm\simd\geometric.h
+	"common.h"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1485083547 d:\c++\libraries\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1483566164 d:\c++\libraries\glm\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1483566163 d:\c++\libraries\glm\glm\detail\func_trigonometric_simd.inl
+
+1483566163 d:\c++\libraries\glm\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1483566163 d:\c++\libraries\glm\glm\common.hpp
+	"detail/func_common.hpp"
+
+1483566163 d:\c++\libraries\glm\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1483566163 d:\c++\libraries\glm\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1483566163 d:\c++\libraries\glm\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1483566163 d:\c++\libraries\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1483566163 d:\c++\libraries\glm\glm\detail\type_half.inl
+
+1483566163 d:\c++\libraries\glm\glm\detail\func_packing_simd.inl
+
+1483566163 d:\c++\libraries\glm\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1483566164 d:\c++\libraries\glm\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1483566163 d:\c++\libraries\glm\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1485083546 d:\c++\libraries\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1483566164 d:\c++\libraries\glm\glm\simd\integer.h
+
+1502713479 d:\c++\projects\opengl_test\include\display.h
+	<GLFW/glfw3.h>
+	<string>
+	"CameraController.h"
+
+1501772448 d:\c++\projects\opengl_test\include\shaderprogram.h
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<string>
+	"Transform.h"
+	"Camera.h"
+
+1502793967 source:d:\c++\projects\opengl_test\src\display.cpp
+	"Display.h"
+	<GLFW/glfw3.h>
+	<glm/gtc/constants.hpp>
+	<string>
+	<iostream>
+
+1469292216 d:\c++\libraries\glew_\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1502201469 source:d:\c++\projects\opengl_test\src\shaderprogram.cpp
+	"ShaderProgram.h"
+	<fstream>
+	<iostream>
+
+1469292216 d:\c++\libraries\glew_\include\gl\eglew.h
+	<sys/types.h>
+	<KHR/khrplatform.h>
+	<EGL/eglplatform.h>
+	<GL/glew.h>
+
+1469292216 d:\c++\libraries\glew_\include\gl\wglew.h
+	<windows.h>
+
+1469292216 d:\c++\libraries\glew_\include\gl\glxew.h
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/Xmd.h>
+	<GL/glew.h>
+
+1502693934 source:d:\c++\projects\opengl_test\src\mesh.cpp
+	"Mesh.h"
+	<vector>
+
+1502691382 d:\c++\projects\opengl_test\include\mesh.h
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<vector>
+	<iostream>
+	"Vertex.h"
+
+1501494322 d:\c++\projects\opengl_test\include\texture.h
+	<GL/glew.h>
+	<string>
+
+1502642280 source:d:\c++\projects\opengl_test\src\texture.cpp
+	"Texture.h"
+	"stb_image.h"
+	<iostream>
+
+1501493765 d:\c++\projects\opengl_test\include\stb_image.h
+	"stb_image.h"
+	<stdio.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<assert.h>
+	<stdint.h>
+	<emmintrin.h>
+	<intrin.h>
+	<arm_neon.h>
+
+1501667170 d:\c++\projects\opengl_test\include\vertex.h
+	<glm/glm.hpp>
+
+1501503635 source:d:\c++\projects\opengl_test\src\vertex.cpp
+	"Vertex.h"
+
+1502692176 d:\c++\projects\opengl_test\include\transform.h
+	"glm/glm.hpp"
+	"glm/gtx/transform.hpp"
+
+1485083547 d:\c++\libraries\glm\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1485083546 d:\c++\libraries\glm\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1485083546 d:\c++\libraries\glm\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1485083546 d:\c++\libraries\glm\glm\gtc\constants.inl
+	<limits>
+
+1485083546 d:\c++\libraries\glm\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1485083547 d:\c++\libraries\glm\glm\gtx\transform.inl
+
+1502692134 source:d:\c++\projects\opengl_test\src\transform.cpp
+	"Transform.h"
+
+1502702895 d:\c++\projects\opengl_test\include\camera.h
+	<glm/glm.hpp>
+
+1502702712 source:d:\c++\projects\opengl_test\src\camera.cpp
+	"Camera.h"
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtx/rotate_vector.hpp>
+
+1485083547 d:\c++\libraries\glm\glm\gtx\rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1485083547 d:\c++\libraries\glm\glm\gtx\rotate_vector.inl
+
+1501691120 d:\c++\projects\opengl_test\include\objloader.h
+	<string>
+	<vector>
+	"Vertex.h"
+
+1501691120 source:d:\c++\projects\opengl_test\src\objloader.cpp
+	"OBJLoader.h"
+	<glm/glm.hpp>
+	<tuple>
+	<map>
+	<fstream>
+	<sstream>
+	<iostream>
+
+1469292216 source:d:\c++\projects\opengl_test\src\glew.c
+	<GL/glew.h>
+	<GL/osmesa.h>
+	<GL/eglew.h>
+	<GL/wglew.h>
+	<GL/glxew.h>
+	<stddef.h>
+	<dlfcn.h>
+	<stdio.h>
+	<stdlib.h>
+	<stdlib.h>
+	<string.h>
+	<AvailabilityMacros.h>
+	<dlfcn.h>
+	<mach-o/dyld.h>
+
+1502693895 source:d:\c++\projects\opengl_test\src\helper\objloader.cpp
+	"helper/OBJLoader.h"
+	<glm/glm.hpp>
+	<tuple>
+	<map>
+	<fstream>
+	<sstream>
+	<iostream>
+
+1502202584 d:\c++\projects\opengl_test\include\helper\objloader.h
+	<string>
+	<vector>
+	"Vertex.h"
+
+1502694116 d:\c++\projects\opengl_test\include\uniformmat4.h
+	"glm/glm.hpp"
+	"Uniform.h"
+
+1502694154 d:\c++\projects\opengl_test\include\uniform.h
+	<GL/glew.h>
+	<string>
+
+1502694115 d:\c++\projects\opengl_test\include\uniformvec3.h
+	"Uniform.h"
+	"glm/glm.hpp"
+
+1502693956 d:\c++\projects\opengl_test\include\program.h
+	<GL/glew.h>
+	<vector>
+	"Uniform.h"
+
+1502202500 d:\c++\projects\opengl_test\include\helper\shadersrcloader.h
+	<string>
+
+1502693903 source:d:\c++\projects\opengl_test\src\helper\shadersrcloader.cpp
+	"helper/ShaderSrcLoader.h"
+	<fstream>
+	<iostream>
+
+1502694019 source:d:\c++\projects\opengl_test\src\program.cpp
+	"Program.h"
+	<iostream>
+	"Shader.h"
+
+1502206870 d:\c++\projects\opengl_test\include\shader.h
+	<GL/glew.h>
+	<string>
+
+1502694041 source:d:\c++\projects\opengl_test\src\shader.cpp
+	"Shader.h"
+	<iostream>
+
+1502690727 source:d:\c++\projects\opengl_test\src\uniform.cpp
+	"Uniform.h"
+
+1502691905 source:d:\c++\projects\opengl_test\src\uniformmat4.cpp
+	"UniformMat4.h"
+
+1502691911 source:d:\c++\projects\opengl_test\src\uniformvec3.cpp
+	"UniformVec3.h"
+
+1502702115 d:\c++\projects\opengl_test\include\cameracontroller.h
+	"glm/glm.hpp"
+	"Camera.h"
+
+1502703320 source:d:\c++\projects\opengl_test\src\cameracontroller.cpp
+	"CameraController.h"
+	<glm/gtc/constants.hpp>
+	<glm/gtx/rotate_vector.hpp>
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\_fixes.hpp
+	<cmath>
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\precision.hpp
+	"setup.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1483566164 d:\c++\projects\opengl_test\lib\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\_swizzle.hpp
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\_swizzle_func.hpp
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec2.inl
+
+1483566164 d:\c++\projects\opengl_test\lib\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec3.inl
+
+1483566164 d:\c++\projects\opengl_test\lib\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec4_simd.inl
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat2x2.inl
+	"func_matrix.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat2x3.inl
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat2x4.inl
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat3x2.inl
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat3x3.inl
+	"func_matrix.hpp"
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat3x4.inl
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat4x2.inl
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat4x3.inl
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\type_mat4x4_simd.inl
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\type_vec1.inl
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\func_vector_relational_simd.inl
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1483566164 d:\c++\projects\opengl_test\lib\glm\simd\exponential.h
+	"platform.h"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\simd\common.h
+	"platform.h"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1483566164 d:\c++\projects\opengl_test\lib\glm\simd\geometric.h
+	"common.h"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\simd\matrix.h
+	"geometric.h"
+
+1483566164 d:\c++\projects\opengl_test\lib\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\func_trigonometric_simd.inl
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\common.hpp
+	"detail/func_common.hpp"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\type_half.inl
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\detail\func_packing_simd.inl
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1483566164 d:\c++\projects\opengl_test\lib\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1483566163 d:\c++\projects\opengl_test\lib\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1483566164 d:\c++\projects\opengl_test\lib\glm\simd\integer.h
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\gtc\constants.inl
+	<limits>
+
+1485083546 d:\c++\projects\opengl_test\lib\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\gtx\rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\gtx\transform.inl
+
+1485083547 d:\c++\projects\opengl_test\lib\glm\gtx\rotate_vector.inl
+
+1471498348 d:\c++\projects\opengl_test\lib\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1469292216 d:\c++\projects\opengl_test\lib\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1501493765 d:\c++\projects\opengl_test\lib\stb_image.h
+	"stb_image.h"
+	<stdio.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<assert.h>
+	<stdint.h>
+	<emmintrin.h>
+	<intrin.h>
+	<arm_neon.h>
+
