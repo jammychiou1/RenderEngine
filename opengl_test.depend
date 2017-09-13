@@ -525,7 +525,7 @@
 
 1483566164 d:\c++\libraries\glm\glm\simd\integer.h
 
-1502713479 d:\c++\projects\opengl_test\include\display.h
+1505311123 d:\c++\projects\opengl_test\include\display.h
 	<GLFW/glfw3.h>
 	<string>
 	"CameraController.h"
@@ -577,7 +577,7 @@
 	"Mesh.h"
 	<vector>
 
-1502691382 d:\c++\projects\opengl_test\include\mesh.h
+1505228627 d:\c++\projects\opengl_test\include\mesh.h
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
@@ -585,11 +585,11 @@
 	<iostream>
 	"Vertex.h"
 
-1501494322 d:\c++\projects\opengl_test\include\texture.h
+1505228630 d:\c++\projects\opengl_test\include\texture.h
 	<GL/glew.h>
 	<string>
 
-1502642280 source:d:\c++\projects\opengl_test\src\texture.cpp
+1505228830 source:d:\c++\projects\opengl_test\src\texture.cpp
 	"Texture.h"
 	"stb_image.h"
 	<iostream>
@@ -616,9 +616,9 @@
 1501503635 source:d:\c++\projects\opengl_test\src\vertex.cpp
 	"Vertex.h"
 
-1502692176 d:\c++\projects\opengl_test\include\transform.h
-	"glm/glm.hpp"
-	"glm/gtx/transform.hpp"
+1505228661 d:\c++\projects\opengl_test\include\transform.h
+	<glm/glm.hpp>
+	<glm/gtx/transform.hpp>
 
 1485083547 d:\c++\libraries\glm\glm\gtx\transform.hpp
 	"../glm.hpp"
@@ -709,19 +709,19 @@
 	<vector>
 	"Vertex.h"
 
-1502694116 d:\c++\projects\opengl_test\include\uniformmat4.h
+1505228725 d:\c++\projects\opengl_test\include\uniformmat4.h
 	"glm/glm.hpp"
-	"Uniform.h"
+	<Uniform.h>
 
-1502694154 d:\c++\projects\opengl_test\include\uniform.h
+1505228647 d:\c++\projects\opengl_test\include\uniform.h
 	<GL/glew.h>
 	<string>
 
-1502694115 d:\c++\projects\opengl_test\include\uniformvec3.h
+1505228715 d:\c++\projects\opengl_test\include\uniformvec3.h
 	"Uniform.h"
-	"glm/glm.hpp"
+	<glm/glm.hpp>
 
-1502693956 d:\c++\projects\opengl_test\include\program.h
+1505228629 d:\c++\projects\opengl_test\include\program.h
 	<GL/glew.h>
 	<vector>
 	"Uniform.h"
@@ -739,7 +739,7 @@
 	<iostream>
 	"Shader.h"
 
-1502206870 d:\c++\projects\opengl_test\include\shader.h
+1505228629 d:\c++\projects\opengl_test\include\shader.h
 	<GL/glew.h>
 	<string>
 

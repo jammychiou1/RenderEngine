@@ -28,7 +28,6 @@ class Display
         int _width;
         int _height;
 
-        bool _flag_close;
         bool _w, _s, _a, _d, _space, _shift;
         double _cursor_x1, _cursor_y1;
         double _cursor_x2, _cursor_y2;

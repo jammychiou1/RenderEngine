@@ -24,7 +24,6 @@ Display::~Display() {
 }
 
 void Display::init() {
-    _flag_close = false;
     _w = _s = _a = _d = _space = _shift = false;
     glfwSetKeyCallback(_window, Display::_keyCallBack);
     glfwSetInputMode(_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -42,7 +41,7 @@ void Display::makeCurrent() {
 }
 
 bool Display::shouldClose() {
-    return glfwWindowShouldClose(_window) || _flag_close;
+    return glfwWindowShouldClose(_window);
 }
 
 void Display::clearScreen(float R, float G, float B, float A) {
@@ -95,7 +94,7 @@ void Display::swapBuffer() {
 void Display::_keyCallBack(GLFWwindow* window, int key, int scancode, int action, int mods) {
     Display* display = (Display*)glfwGetWindowUserPointer(window);
     if (action == GLFW_PRESS) {
-        if (key == GLFW_KEY_ESCAPE) display->_flag_close = true;
+        if (key == GLFW_KEY_ESCAPE) glfwSetWindowShouldClose(window, true);
         if (key == GLFW_KEY_W) display->_w = true;
         if (key == GLFW_KEY_S) display->_s = true;
         if (key == GLFW_KEY_A) display->_a = true;
