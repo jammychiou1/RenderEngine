@@ -1,12 +1,12 @@
-#version 330
+#version 120
 
-layout(location = 0) in vec3 a_position;
-layout(location = 1) in vec2 a_tex_coord;
-layout(location = 2) in vec3 a_normal;
+attribute vec3 a_position;
+attribute vec2 a_tex_coord;
+attribute vec3 a_normal;
 
-out vec3 v_position;
-out vec2 v_tex_coord;
-out vec3 v_normal;
+varying vec3 v_position;
+varying vec2 v_tex_coord;
+varying vec3 v_normal;
 
 uniform mat4 u_transform;
 uniform mat4 u_camera;

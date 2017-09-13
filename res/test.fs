@@ -1,10 +1,8 @@
-#version 330
+#version 120
 
-in vec3 v_position;
-in vec2 v_tex_coord;
-in vec3 v_normal;
-
-layout(location = 0) out vec4 o_color;
+varying vec3 v_position;
+varying vec2 v_tex_coord;
+varying vec3 v_normal;
 
 uniform sampler2D diffuse;
 uniform vec3 u_light_pos;
@@ -22,5 +20,5 @@ void main() {
     if (dot(unit_normal, to_light) > 0) {
         specular = light_color * pow(clamp(dot(reflect(-to_light, unit_normal), to_cam), 0, 1), 10) * 0.75;
     }
-    o_color = clamp(diffuse + specular, vec4(0), vec4(1));
+    gl_FragColor = clamp(diffuse + specular, vec4(0), vec4(1));
 }
