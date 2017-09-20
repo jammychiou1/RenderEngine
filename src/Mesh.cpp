@@ -23,8 +23,6 @@ void Mesh::bufferData(std::vector<Vertex>& vertices, std::vector<unsigned int>& 
 
     _draw_cnt = indices.size();
 
-    glGenVertexArrays(1, &_VAO);
-
     glBindVertexArray(_VAO);
     {
         glBindBuffer(GL_ARRAY_BUFFER, _VBO);

@@ -7,14 +7,15 @@
 #include <iostream>
 
 Display::Display(const std::string& title) {
-    GLFWmonitor* monitor = glfwGetPrimaryMonitor();
-    const GLFWvidmode* mode = glfwGetVideoMode(monitor);
-    glfwWindowHint(GLFW_RED_BITS, mode->redBits);
-    glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
-    glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
-    glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
-    glfwWindowHint(GLFW_SAMPLES, 8);
-    _window = glfwCreateWindow(mode->width, mode->height, "My Title", monitor, NULL);
+//    GLFWmonitor* monitor = glfwGetPrimaryMonitor();
+//    const GLFWvidmode* mode = glfwGetVideoMode(monitor);
+//    glfwWindowHint(GLFW_RED_BITS, mode->redBits);
+//    glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
+//    glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
+//    glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
+    glfwWindowHint(GLFW_SAMPLES, 4);
+//    _window = glfwCreateWindow(mode->width, mode->height, "My Title", monitor, NULL);
+    _window = glfwCreateWindow(960, 540, "My Title", NULL, NULL);
     glfwGetWindowSize(_window, &_width, &_height);
     glfwSetWindowUserPointer(_window, this);
 }
@@ -28,7 +29,7 @@ void Display::init() {
     glfwSetKeyCallback(_window, Display::_keyCallBack);
     glfwSetInputMode(_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     glfwSetCursorPosCallback(_window, Display::_cursorPosCallBack);
-    //glfwGetCursorPos(_window, &_cursor_x, &_cursor_y);
+    glfwSwapInterval(1);
 }
 
 void Display::makeCurrent() {
@@ -49,7 +50,7 @@ void Display::clearScreen(float R, float G, float B, float A) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
-void Display::updateControls() {
+void Display::updateControls(float t) {
     glm::vec3 vel;
     glm::vec2 ang_vel;
 
@@ -72,7 +73,7 @@ void Display::updateControls() {
     else vel.z = 0;
 
     if (glm::length(vel) > 0.01) {
-        vel = glm::normalize(vel) * 0.1f;
+        vel = glm::normalize(vel);
     }
 
     ang_vel.x = -(_cursor_x2 - _cursor_x1) / 1000 * glm::half_pi<float>();
@@ -84,7 +85,7 @@ void Display::updateControls() {
     _controller->setVel(vel);
     _controller->setAngVel(ang_vel);
 
-    _controller->update();
+    _controller->update(t);
 }
 
 void Display::swapBuffer() {

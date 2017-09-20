@@ -9,6 +9,7 @@
 #include <chrono>
 #include <vector>
 
+#include "Terrain.h"
 #include "Display.h"
 #include "Texture.h"
 #include "Vertex.h"
@@ -30,7 +31,7 @@ int main() {
 
     std::vector<Vertex> vertices;
     std::vector<unsigned int> indices;
-    OBJLoader::loadFile("./res/dragon.obj", vertices, indices);
+    OBJLoader::loadFile("./res/cube.obj", vertices, indices);
 
     std::vector<Vertex> vertices_floor({
         Vertex(glm::vec3(-1, 0, 1), glm::vec2(0, 1), glm::vec3(0, 1, 0)),
@@ -39,6 +40,8 @@ int main() {
         Vertex(glm::vec3(-1, 0, -1), glm::vec2(0, 0), glm::vec3(0, 1, 0)),
     });
     std::vector<unsigned int> indices_floor({0, 1, 2, 0, 2, 3});
+
+    Terrain terrain(100, 100, 40, 8, 1, 0.4);
 
     if (!glfwInit()) {
         std::cerr << "Error: GLFW could not be initialized." << std::endl;
@@ -73,27 +76,28 @@ int main() {
 
     Mesh meshes[2];
     meshes[0].bufferData(vertices, indices);
-    meshes[1].bufferData(vertices_floor, indices_floor);
+    meshes[1].bufferData(terrain.getVertices(), terrain.getIndices());
 
     Transform transforms[2];
     transforms[0].getScl() = glm::vec3(0.4);
     transforms[0].getPos() = glm::vec3(0, 0.5, 0);
-    transforms[1].getScl() = glm::vec3(10);
 
-    Texture gold("./res/gold.jpg");
-    Texture golden("./res/golden.png");
-    Texture white("./res/white.png");
+    //Texture gold("./res/gold.jpg");
+    //Texture golden("./res/golden.png");
+    //Texture white("./res/white.png");
     Texture brick("./res/brick.jpg");
-    Texture* textures[2] = {&golden, &gold};
+    Texture grass("./res/grass.png");
+    //Texture abc("./res/abc.jpg");
+    Texture* textures[2] = {&brick, &grass};
 
-    Camera camera(glm::vec3(), glm::vec3(), glm::vec3(), 70, 0.01, 100, 1.0 * display.getWidth() / display.getHeight());
+    Camera camera(glm::vec3(), glm::vec3(), glm::vec3(), 70, 0.01, 200, 1.0 * display.getWidth() / display.getHeight());
 
-    CameraController controller(&camera, glm::vec3(0, 0, 1), glm::vec2());
+    CameraController controller(&camera, glm::vec3(0, 0, 1), glm::vec2(), &terrain);
 
     display.setController(&controller);
 
     std::chrono::system_clock::time_point then, now, start = std::chrono::system_clock::now();
-    double secs;
+    double diff, time;
 
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
@@ -106,18 +110,21 @@ int main() {
         //print fps
         then = now;
         now = std::chrono::system_clock::now();
-        std::cout << 1e6 / std::chrono::duration_cast<std::chrono::microseconds>(now - then).count() << std::endl;
-        secs = std::chrono::duration_cast<std::chrono::microseconds>(now - start).count() / 1e6;
+        diff = std::chrono::duration_cast<std::chrono::microseconds>(now - then).count() / 1e6;
+        time = std::chrono::duration_cast<std::chrono::microseconds>(now - start).count() / 1e6;
+        std::cout << 1 / diff << std::endl;
+//        secs = std::chrono::duration_cast<std::chrono::microseconds>(now - start).count() / 1e6;
 
         //update physics
-        display.updateControls();
+        display.updateControls(diff);
 
         //render
-        display.clearScreen(0.1, 0.1, 0.3, 0);
+        display.clearScreen(0.5, 0.5, 0.9, 0);
 
         u_camera.setMat(camera.getViewProj());
         u_cam_pos.setVec(camera.getPos());
-        u_light_pos.setVec(glm::vec3(0, 3, 5));
+        u_light_pos.setVec(glm::vec3(0, 150, 0));
+//        u_light_pos.setVec(glm::vec3(0, 150*sin(glm::two_pi<float>()*time/5), 150*cos(glm::two_pi<float>()*time/5)));
 
         program.use();
 

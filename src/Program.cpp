@@ -23,9 +23,9 @@ void Program::build(const std::string& vertex_shader_src, const std::string& fra
     glAttachShader(_handle, vertex_shader.getHandle());
     glAttachShader(_handle, fragment_shader.getHandle());
 
-    glBindAttribLocation(_handle, 0, "a_position");
-    glBindAttribLocation(_handle, 1, "a_tex_coord");
-    glBindAttribLocation(_handle, 2, "a_normal");
+    glBindAttribLocation(_handle, 0, "v_position");
+    glBindAttribLocation(_handle, 1, "v_tex_coord");
+    glBindAttribLocation(_handle, 2, "v_normal");
 
     glLinkProgram(_handle);
     _checkError(GL_LINK_STATUS, "Error: Failed while linking program");

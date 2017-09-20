@@ -17,8 +17,10 @@ void main() {
 
     vec4 diffuse = light_color * texture2D(diffuse, v_tex_coord) * clamp(dot(unit_normal, to_light), 0, 1);
     vec4 specular = vec4(0);
-    if (dot(unit_normal, to_light) > 0) {
-        specular = light_color * pow(clamp(dot(reflect(-to_light, unit_normal), to_cam), 0, 1), 10) * 0.75;
-    }
+    specular = light_color * pow(clamp(dot(reflect(-to_light, unit_normal), to_cam), 0, 1), 10) * 0.75;
+    //if (dot(unit_normal, to_light) > 0) {
+    //    specular = light_color * pow(clamp(dot(reflect(-to_light, unit_normal), to_cam), 0, 1), 10) * 0.75;
+    //}
     gl_FragColor = clamp(diffuse + specular, vec4(0), vec4(1));
+    //gl_FragColor = vec4(unit_normal, 1);
 }
