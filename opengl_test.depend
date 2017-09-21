@@ -1986,7 +1986,7 @@
 1505272812 source:c:\c++\src\uniformvec3.cpp
 	"UniformVec3.h"
 
-1505888335 source:c:\opengl_test\main.cpp
+1505981083 source:c:\opengl_test\main.cpp
 	<GL/glew.h>
 	<GLFW/glfw3.h>
 	<glm/glm.hpp>
@@ -2578,12 +2578,12 @@
 
 1505272810 c:\opengl_test\lib\glm\gtx\rotate_vector.inl
 
-1505888475 source:c:\opengl_test\src\cameracontroller.cpp
+1505977961 source:c:\opengl_test\src\cameracontroller.cpp
 	"CameraController.h"
 	<glm/gtc/constants.hpp>
 	<glm/gtx/rotate_vector.hpp>
 
-1505444869 source:c:\opengl_test\src\display.cpp
+1505979458 source:c:\opengl_test\src\display.cpp
 	"Display.h"
 	<GLFW/glfw3.h>
 	<glm/gtc/constants.hpp>
@@ -2621,7 +2621,7 @@
 	"Shader.h"
 	<iostream>
 
-1505881711 source:c:\opengl_test\src\texture.cpp
+1505977826 source:c:\opengl_test\src\texture.cpp
 	"Texture.h"
 	"stb_image.h"
 	<iostream>

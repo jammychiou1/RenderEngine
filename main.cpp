@@ -41,7 +41,7 @@ int main() {
     });
     std::vector<unsigned int> indices_floor({0, 1, 2, 0, 2, 3});
 
-    Terrain terrain(100, 100, 40, 8, 1, 0.4);
+    Terrain terrain(100, 500, 40, 8, 1, 0.4);
 
     if (!glfwInit()) {
         std::cerr << "Error: GLFW could not be initialized." << std::endl;
@@ -82,15 +82,15 @@ int main() {
     transforms[0].getScl() = glm::vec3(0.4);
     transforms[0].getPos() = glm::vec3(0, 0.5, 0);
 
-    //Texture gold("./res/gold.jpg");
+    Texture gold("./res/gold.jpg");
     //Texture golden("./res/golden.png");
     //Texture white("./res/white.png");
     Texture brick("./res/brick.jpg");
-    Texture grass("./res/grass.png");
+    //Texture grass("./res/grass.png");
     //Texture abc("./res/abc.jpg");
-    Texture* textures[2] = {&brick, &grass};
+    Texture* textures[2] = {&brick, &gold};
 
-    Camera camera(glm::vec3(), glm::vec3(), glm::vec3(), 70, 0.01, 200, 1.0 * display.getWidth() / display.getHeight());
+    Camera camera(glm::vec3(), glm::vec3(), glm::vec3(), 70, 0.01, 400, 1.0 * display.getWidth() / display.getHeight());
 
     CameraController controller(&camera, glm::vec3(0, 0, 1), glm::vec2(), &terrain);
 
@@ -105,6 +105,17 @@ int main() {
 
 //    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
+//    std::cout << glGetString(GL_VERSION) << std::endl;
+//    if (GLEW_EXT_texture_filter_anisotropic) {
+//        float tmp;
+//        glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &tmp);
+//        std::cout << tmp << std::endl;
+//    }
+//    else {
+//        std::cout << "NO" << std::endl;
+//    }
+
+
     while (!display.shouldClose()) {
 
         //print fps
@@ -112,7 +123,7 @@ int main() {
         now = std::chrono::system_clock::now();
         diff = std::chrono::duration_cast<std::chrono::microseconds>(now - then).count() / 1e6;
         time = std::chrono::duration_cast<std::chrono::microseconds>(now - start).count() / 1e6;
-        std::cout << 1 / diff << std::endl;
+//        std::cout << 1 / diff << std::endl;
 //        secs = std::chrono::duration_cast<std::chrono::microseconds>(now - start).count() / 1e6;
 
         //update physics

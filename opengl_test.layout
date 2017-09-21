@@ -2,24 +2,14 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="include\Camera.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Display.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="332" topLine="0" />
+			<Cursor1 position="2418" topLine="20" />
 		</Cursor>
 	</File>
-	<File name="src\Program.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\CameraController.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="773" topLine="8" />
-		</Cursor>
-	</File>
-	<File name="src\Uniform.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="68" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Mesh.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="427" topLine="0" />
+			<Cursor1 position="808" topLine="8" />
 		</Cursor>
 	</File>
 	<File name="src\helper\OBJLoader.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -27,19 +17,14 @@
 			<Cursor1 position="29" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Terrain.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="277" topLine="98" />
+			<Cursor1 position="1961" topLine="21" />
 		</Cursor>
 	</File>
-	<File name="src\Shader.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Transform.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="42" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Display.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2019" topLine="62" />
+			<Cursor1 position="240" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src\Mesh.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -47,19 +32,9 @@
 			<Cursor1 position="2052" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\Texture.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Uniform.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Terrain.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1961" topLine="21" />
-		</Cursor>
-	</File>
-	<File name="src\UniformVec3.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="26" topLine="0" />
+			<Cursor1 position="68" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src\UniformMat4.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -67,44 +42,39 @@
 			<Cursor1 position="162" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\CameraController.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Program.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="494" topLine="10" />
+			<Cursor1 position="773" topLine="8" />
 		</Cursor>
 	</File>
-	<File name="include\Vertex.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Texture.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="207" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Camera.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="100" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Texture.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="894" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Transform.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="156" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\helper\ShaderSrcLoader.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="35" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Display.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="593" topLine="5" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\Program.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="117" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\UniformMat4.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="48" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Display.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="528" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="include\Mesh.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="427" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Terrain.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="408" topLine="3" />
 		</Cursor>
 	</File>
 	<File name="include\Uniform.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -117,24 +87,54 @@
 			<Cursor1 position="94" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\CameraController.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Vertex.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="856" topLine="0" />
+			<Cursor1 position="207" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\UniformMat4.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="48" topLine="0" />
+			<Cursor1 position="2787" topLine="78" />
 		</Cursor>
 	</File>
-	<File name="include\Transform.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Camera.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="240" topLine="0" />
+			<Cursor1 position="100" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\Terrain.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Camera.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="408" topLine="3" />
+			<Cursor1 position="608" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="src\Shader.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="42" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Texture.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="738" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="src\Transform.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="156" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\UniformVec3.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="26" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\helper\ShaderSrcLoader.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="35" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\CameraController.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="494" topLine="10" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
