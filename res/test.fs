@@ -14,7 +14,7 @@ void main() {
     vec3 to_light = normalize(u_light_pos - v_position);
     vec3 to_cam = normalize(u_cam_pos - v_position);
     vec4 light_color = vec4(1, 1, 1, 1);
-    float dist = distance(u_light_pos, v_position);
+    float dist = distance(u_cam_pos, v_position);
     float a = 1e-36;
     float b = 15;
     float fog = exp(-a * pow(dist, b));
