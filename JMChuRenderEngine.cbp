@@ -2,26 +2,34 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="RenderEngine" />
+		<Option title="JMChuRenderEngine" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/opengl_test" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/opengl_test" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
+			<Target title="Test">
+				<Option output="test/2DTest/RenderEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="test/2DTest/" />
+				<Option object_output="test/2DTest/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="JMChuRE">
+				<Option output="bin/JMChuRE/JMChuRE" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/JMChuRE/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -43,6 +51,7 @@
 		</Linker>
 		<Unit filename="include/Camera.h" />
 		<Unit filename="include/CameraController.h" />
+		<Unit filename="include/Canvas2D.h" />
 		<Unit filename="include/Display.h" />
 		<Unit filename="include/Mesh.h" />
 		<Unit filename="include/Program.h" />
@@ -59,6 +68,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Camera.cpp" />
 		<Unit filename="src/CameraController.cpp" />
+		<Unit filename="src/Canvas2D.cpp" />
 		<Unit filename="src/Display.cpp" />
 		<Unit filename="src/Mesh.cpp" />
 		<Unit filename="src/Program.cpp" />
