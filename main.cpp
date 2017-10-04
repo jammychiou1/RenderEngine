@@ -135,7 +135,7 @@ int main() {
         u_camera.setMat(camera.getViewProj());
         u_cam_pos.setVec(camera.getPos());
         u_light_pos.setVec(glm::vec3(0, 150, 0));
-//        u_light_pos.setVec(glm::vec3(0, 150*sin(glm::two_pi<float>()*time/5), 150*cos(glm::two_pi<float>()*time/5)));
+//        u_light_pos.setVec(glm::vec3(0, 150*sin(glm::two_pi<float>()*time/5), 150*cos(glm::two_pi<float>()*time/5)));
 
         program.use();
 

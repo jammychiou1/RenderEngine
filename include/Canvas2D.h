@@ -7,7 +7,7 @@ namespace JMChuRE {
     class Canvas2D
     {
         public:
-            Canvas2D(int width, int height);
+            Canvas2D(std::string& title, int width, int height);
             virtual ~Canvas2D();
 
             bool static init() {
@@ -17,11 +17,13 @@ namespace JMChuRE {
                 }
                 return true;
             }
+
             void static terminate() {
                 glfwTerminate();
             }
+
         private:
-            _window
+            Display _display;
     };
 }
 

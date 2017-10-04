@@ -1,14 +1,10 @@
 #include "Canvas2D.h"
 
-Canvas2D::Canvas2D(int width, int height) {
-    if (!glfwInit()) {
-        std::cerr << "Error: GLFW could not be initialized." << std::endl;
-        glfwTerminate();
-        return -1;
-    }
-}
+namespace JMChuRE {
+    Canvas2D::Canvas2D(const std::string& title, int width, int height) : Display(title, width, height) {
 
-Canvas2D::~Canvas2D()
-{
-    //dtor
+    }
+
+    Canvas2D::~Canvas2D() {
+    }
 }
