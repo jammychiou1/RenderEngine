@@ -1,16 +1,29 @@
 #ifndef MATERIAL_H
 #define MATERIAL_H
 
+#include <string>
+#include <glm/glm.hpp>
+#include "Texture.h"
+
 namespace JMChuRE {
     class Material
     {
         public:
-            Material(bool use_lighting, Texture* texture, glm::vec4 color);
+            Material(bool use_lighting = false, bool use_texture = false, std::string texture_file = "", glm::vec3 color = glm::vec3(1));
             virtual ~Material();
+            bool get_use_lighting() const {
+                return _use_lighting;
+            }
+            Texture* get_texture() const {
+                return _texture;
+            }
+            glm::vec3 get_default_color() const {
+                return _default_color;
+            }
         private:
             bool _use_lighting;
             Texture* _texture;
-            glm::vec4 _color;
+            glm::vec3 _default_color;
     };
 }
 #endif // MATERIAL_H

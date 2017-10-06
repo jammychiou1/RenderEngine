@@ -5,6 +5,7 @@
 
 #include <string>
 #include <iostream>
+#include <exception>
 
 Display::Display(const std::string& title, int width, int height) {
 //    GLFWmonitor* monitor = glfwGetPrimaryMonitor();
@@ -20,9 +21,9 @@ Display::Display(const std::string& title, int width, int height) {
     glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
 
     //Create window
-    _window = glfwCreateWindow(width, height, title, nullptr, nullptr);
+    _window = glfwCreateWindow(width, height, title.c_str(), nullptr, nullptr);
     if (_window == nullptr) {
-        throw runtime_error("Error: Window was not created.");
+        throw std::runtime_error("Error: Window was not created.");
     }
 
     //Window settings

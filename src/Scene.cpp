@@ -1,9 +1,7 @@
 #include "Scene.h"
 
-Scene::Scene() {
-}
+namespace JMChuRE {
+    Scene::Scene() {}
 
-Scene::~Scene()
-{
-    //dtor
+    Scene::~Scene() {}
 }

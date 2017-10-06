@@ -1,13 +1,17 @@
 #ifndef CANVAS2D_H
 #define CANVAS2D_H
 
+#include <iostream>
+#include <string>
 #include <GLFW/glfw3.h>
+
+#include "Display.h"
 
 namespace JMChuRE {
     class Canvas2D
     {
         public:
-            Canvas2D(std::string& title, int width, int height);
+            Canvas2D(const std::string& title, int width, int height);
             virtual ~Canvas2D();
 
             bool static init() {
@@ -17,6 +21,12 @@ namespace JMChuRE {
                 }
                 return true;
             }
+
+            void static pollEvent() {glfwPollEvents();}
+
+            void swap_buffers() {_display.swapBuffer();}
+
+            bool
 
             void static terminate() {
                 glfwTerminate();
