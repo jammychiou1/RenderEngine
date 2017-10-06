@@ -49,7 +49,7 @@ int main() {
         return -1;
     }
 
-    Display display("OpenGL Test");
+    Display display("OpenGL Test", 940, 640);
     display.makeCurrent();
     display.init();
 
