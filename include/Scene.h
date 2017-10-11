@@ -22,6 +22,7 @@ namespace JMChuRE {
             std::vector<RenderObject*> _render_objs;
             Camera* _camera;
             glm::vec3 _light_pos;
+            Program _program;
     };
 }
 

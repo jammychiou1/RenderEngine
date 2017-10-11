@@ -14,7 +14,7 @@ class Display
         virtual ~Display();
 //        void makeCurrent();
 //        void init();
-//        bool shouldClose();
+        bool shouldClose();
 //        void setController(CameraController* controller) {_controller = controller; glfwGetCursorPos(_window, &_cursor_x1, &_cursor_y1); glfwGetCursorPos(_window, &_cursor_x2, &_cursor_y2);}
         void clearScreen(float R, float G, float B, float A);
 //        void updateControls(float t);

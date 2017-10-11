@@ -53,10 +53,23 @@ void Program::build(const std::string& vertex_shader_src, const std::string& fra
 //    glUseProgram(_handle);
 //}
 
-void Program::render(JMChuRE::Scene& scene, JMChuRE::RenderObject& render_object) {
-    set_scene(scene);
-    set_object(render_object);
-    render_object.mesh.draw();
+void Program::render(Camera& camera, glm::vec3 light_pos, std::vector<JMChuRE::RenderObject*>& render_objects) {
+    glUniform3fv(_u_light_pos, 1, &light_pos[0]);
+    glUniform3fv(_u_camera, 1, &camera.getViewProj()[0][0]);
+    for (JMChuRE::RenderObject* render_object : render_objects) {
+        glUniformMatrix4fv(_u_tranform, 1, GL_FALSE, &render_object->transform->getModel()[0][0]);
+        glUniform1i(_u_use_lighting, render_object->material->get_use_lighting());
+        if (!render_object->material->get_texture()) {
+            glUniform1i(_u_use_texture, false);
+            glUniform3fv(_u_default_color, 1, &render_object->material->get_default_color()[0]);
+        }
+        else {
+            glUniform1i(_u_use_texture, true);
+            render_object->material->get_texture()->bindTexture();
+        }
+
+        render_object->mesh->draw();
+    }
 }
 
 //void Program::update() {
@@ -65,23 +78,23 @@ void Program::render(JMChuRE::Scene& scene, JMChuRE::RenderObject& render_object
 //    }
 //}
 
-void Program::set_scene(JMChuRE::Scene& scene) {
-    glUniform3fv(_u_light_pos, 1, &scene.get_light_pos()[0]);
-    glUniform3fv(_u_camera, 1, &scene.get_camera()->getViewProj()[0][0]);
-}
-
-void Program::set_object(JMChuRE::RenderObject& render_object) {
-    glUniformMatrix4fv(_u_tranform, 1, GL_FALSE, &render_object.transform.getModel()[0][0]);
-    glUniform1i(_u_use_lighting, render_object.material.get_use_lighting());
-    if (!render_object.material.get_texture()) {
-        glUniform1i(_u_use_texture, false);
-        glUniform3fv(_u_default_color, 1, &render_object.material.get_default_color()[0]);
-    }
-    else {
-        glUniform1i(_u_use_texture, true);
-        render_object.material.get_texture()->bindTexture();
-    }
-}
+//void Program::set_scene(JMChuRE::Scene& scene) {
+//    glUniform3fv(_u_light_pos, 1, &scene.get_light_pos()[0]);
+//    glUniform3fv(_u_camera, 1, &scene.get_camera()->getViewProj()[0][0]);
+//}
+//
+//void Program::set_object(JMChuRE::RenderObject& render_object) {
+//    glUniformMatrix4fv(_u_tranform, 1, GL_FALSE, &render_object.transform.getModel()[0][0]);
+//    glUniform1i(_u_use_lighting, render_object.material.get_use_lighting());
+//    if (!render_object.material.get_texture()) {
+//        glUniform1i(_u_use_texture, false);
+//        glUniform3fv(_u_default_color, 1, &render_object.material.get_default_color()[0]);
+//    }
+//    else {
+//        glUniform1i(_u_use_texture, true);
+//        render_object.material.get_texture()->bindTexture();
+//    }
+//}
 
 void Program::_checkError(GLenum flag, const std::string& error_message) {
     GLint success;

@@ -22,11 +22,13 @@ namespace JMChuRE {
                 return true;
             }
 
-            void static pollEvent() {glfwPollEvents();}
-
-            void swap_buffers() {_display.swapBuffer();}
-
-            bool
+            void start(void(*run)()) {
+                while (!_display.shouldClose()) {
+                    run();
+                    _display.swapBuffer();
+                    glfwPollEvents();
+                }
+            }
 
             void static terminate() {
                 glfwTerminate();

@@ -58,9 +58,9 @@ Display::~Display() {
 //    }
 //}
 
-//bool Display::shouldClose() {
-//    return glfwWindowShouldClose(_window);
-//}
+bool Display::shouldClose() {
+    return glfwWindowShouldClose(_window);
+}
 
 void Display::clearScreen(float R, float G, float B, float A) {
     glClearColor(R, G, B, A);

@@ -11,9 +11,9 @@ namespace JMChuRE {
         public:
             RenderObject();
             virtual ~RenderObject();
-            Mesh mesh;
-            JMChuRE::Material material;
-            Transform transform;
+            Mesh* mesh;
+            JMChuRE::Material* material;
+            Transform* transform;
     };
 }
 #endif // RENDEROBJECT_H

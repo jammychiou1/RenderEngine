@@ -10,6 +10,12 @@ namespace JMChuRE {
         }
     }
 
+    Material::Material() {
+        _use_lighting = false;
+        _texture = nullptr;
+        _default_color = glm::vec3(1);
+    }
+
     Material::~Material() {
         delete _texture;
     }

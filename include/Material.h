@@ -9,8 +9,10 @@ namespace JMChuRE {
     class Material
     {
         public:
-            Material(bool use_lighting = false, bool use_texture = false, std::string texture_file = "", glm::vec3 color = glm::vec3(1));
+            Material(bool use_lighting, bool use_texture, std::string texture_file, glm::vec3 color);
+            Material();
             virtual ~Material();
+
             bool get_use_lighting() const {
                 return _use_lighting;
             }
