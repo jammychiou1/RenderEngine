@@ -13,12 +13,9 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-O2" />
+					<Add option="-g" />
 					<Add directory="include" />
 				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
 			</Target>
 			<Target title="JMChuRE">
 				<Option output="bin/JMChuRE/JMChuRE" prefix_auto="1" extension_auto="1" />

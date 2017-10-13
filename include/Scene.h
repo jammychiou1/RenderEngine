@@ -3,6 +3,7 @@
 
 #include "RenderObject.h"
 #include "Camera.h"
+#include "Program.h"
 
 namespace JMChuRE {
     class Scene
@@ -10,6 +11,7 @@ namespace JMChuRE {
         public:
             Scene();
             virtual ~Scene();
+            void render();
             void add_render_object(JMChuRE::RenderObject* render_object) {
                 _render_objs.push_back(render_object);
             }

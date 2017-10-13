@@ -3,15 +3,21 @@
 
 #include <iostream>
 #include <string>
-#include <GLFW/glfw3.h>
 
+#include "Scene.h"
 #include "Display.h"
 
 namespace JMChuRE {
+    class RenderEngineBase {
+        public:
+            virtual void load() = 0;
+            virtual void run() = 0;
+    };
+
     class Canvas2D
     {
         public:
-            Canvas2D(const std::string& title, int width, int height);
+            Canvas2D(const std::string& title, int width, int height, RenderEngineBase* reb);
             virtual ~Canvas2D();
 
             bool static init() {
@@ -22,9 +28,13 @@ namespace JMChuRE {
                 return true;
             }
 
-            void start(void(*run)()) {
+            void start() {
+                std::cout << "ok" << std::endl;
+                _reb->load();
                 while (!_display.shouldClose()) {
-                    run();
+                    _reb->run();
+                    _display.clearScreen(1, 1, 1, 0);
+                    if (_scene) _scene->render();
                     _display.swapBuffer();
                     glfwPollEvents();
                 }
@@ -34,8 +44,12 @@ namespace JMChuRE {
                 glfwTerminate();
             }
 
+            void set_scene(Scene* scene) {_scene = scene;}
+
         private:
+            Scene* _scene;
             Display _display;
+            RenderEngineBase* _reb;
     };
 }
 

@@ -2,11 +2,12 @@
 #define PROGRAM_H
 
 #include <GL/glew.h>
-
 #include <vector>
+#include <glm/glm.hpp>
 
 #include "Uniform.h"
-#include "Scene.h"
+#include "Camera.h"
+#include "RenderObject.h"
 
 class Program
 {
@@ -17,11 +18,11 @@ class Program
 //        void addUniform(Uniform* uniform);
         void build(const std::string& vertex_shader_src, const std::string& fragment_shader_src);
 //        void use();
-        void render(JMChuRE::Scene& scene, JMChuRE::RenderObject& render_object);
+        void render(Camera* camera, glm::vec3 light_pos, std::vector<JMChuRE::RenderObject*>& render_objects);
 //        void update();
 
-        void set_scene(JMChuRE::Scene& scene);
-        void set_object(JMChuRE::RenderObject& render_object);
+//        void set_scene(JMChuRE::Scene& scene);
+//        void set_object(JMChuRE::RenderObject& render_object);
 
     private:
         GLuint _handle;

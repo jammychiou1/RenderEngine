@@ -1,6 +1,5 @@
 #include "Display.h"
 
-#include <GLFW/glfw3.h>
 #include <glm/gtc/constants.hpp>
 
 #include <string>
@@ -35,6 +34,12 @@ Display::Display(const std::string& title, int width, int height) {
     glfwGetFramebufferSize(_window, &_width, &_height);
 
     glfwShowWindow(_window);
+
+    GLenum err = glewInit();
+    if (err != GLEW_OK) {
+        std::cerr << "Error: GLEW could not be initialized." << glewGetErrorString(err) << std::endl;
+        throw std::runtime_error("Error: GLEW could not be initialized.");
+    }
 }
 
 Display::~Display() {
